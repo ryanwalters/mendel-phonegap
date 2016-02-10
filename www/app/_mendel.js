@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('mendel', [
-        'ngMaterial'
+        'ngMaterial',
+        'mendel.navigation'
     ]);
 })();
