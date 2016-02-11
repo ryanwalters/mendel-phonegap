@@ -6,6 +6,7 @@
         .controller('NavigationController', NavigationController);
 
     function NavigationController() {
-        
+
+        this.test = 'navigation controller';
     }
 })();

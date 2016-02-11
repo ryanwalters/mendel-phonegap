@@ -27,19 +27,27 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
-        <title>Mendel Phonegap</title>
+        <title>Britannica.com</title>
     </head>
-    <body ng-cloak>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+    <body ng-app="mendel" ng-cloak layout="column" layout-fill>
 
-        <div ng-controller="NavigationController"></div>
+        <md-toolbar class="md-medium-tall" layout-align="end" md-whiteframe="1">
+            <div class="md-toolbar-tools">
+                <button class="md-icon-button md-button">
+                    <md-icon md-ink-ripple>menu</md-icon>
+                </button>
+                <span>Britannica Stories</span>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+
+        <md-content>
+            Testing
+        </md-content>
+
+        <nav ng-controller="NavigationController as navigation"></nav>
 
         <script type="text/javascript" src="cordova.js"></script>
 
@@ -48,6 +56,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+        <script src="//cdn.rawgit.com/angular-ui/ui-router/0.2.18/release/angular-ui-router.min.js"></script>
 
         <script src="/dist/app.js"></script>
     </body>

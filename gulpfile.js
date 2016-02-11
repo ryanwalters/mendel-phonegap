@@ -6,7 +6,7 @@ const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 
 const paths = {
-    scripts: './www/app/**/*.js'
+    scripts: ['./www/app/**/_*.js', './www/app/**/*.js']
 };
 
 gulp.task('scripts', () => {
