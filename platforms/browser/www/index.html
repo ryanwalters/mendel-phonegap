@@ -26,12 +26,12 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
-        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="dist/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
 
         <title>Britannica.com</title>
     </head>
-    <body ng-app="mendel" ng-cloak layout="column" layout-fill>
+    <body ng-cloak layout="column" layout-fill>
 
         <md-toolbar class="md-medium-tall" layout-align="end" md-whiteframe="1">
             <div class="md-toolbar-tools">
@@ -43,21 +43,21 @@
             </div>
         </md-toolbar>
 
-        <md-content>
-            Testing
-        </md-content>
+        <md-content ui-view></md-content>
 
-        <nav ng-controller="NavigationController as navigation"></nav>
+        <nav ng-controller="NavigationController as navigation">
+            {{ navigation.test }}
+        </nav>
 
         <script type="text/javascript" src="cordova.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
-        <script src="//cdn.rawgit.com/angular-ui/ui-router/0.2.18/release/angular-ui-router.min.js"></script>
+        <script src="dist/angular/angular.js"></script>
+        <script src="dist/angular-animate/angular-animate.js"></script>
+        <script src="dist/angular-aria/angular-aria.js"></script>
+        <script src="dist/angular-messages/angular-messages.js"></script>
+        <script src="dist/angular-material/angular-material.js"></script>
+        <script src="dist/angular-ui-router/release/angular-ui-router.js"></script>
 
-        <script src="/dist/app.js"></script>
+        <script src="dist/app.js"></script>
     </body>
 </html>
