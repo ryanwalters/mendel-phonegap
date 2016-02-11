@@ -8,7 +8,10 @@
     MendelConfig.$inject = ['$mdThemingProvider'];
 
     function MendelConfig($mdThemingProvider) {
+
         $mdThemingProvider.theme('default')
-            .primaryPalette('blue');
+            .primaryPalette('light-blue', {
+                'default': '900'
+            });
     }
 })();
