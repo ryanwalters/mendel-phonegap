@@ -7,7 +7,7 @@ const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 
 const paths = {
-    css: './www/sass/**/*.css',
+    css: './www/sass/**/*.scss',
     dist: './www/dist',
     scripts: ['./www/app/**/_*.js', './www/app/**/*.js']
 };
