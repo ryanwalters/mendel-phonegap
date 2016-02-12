@@ -4,6 +4,7 @@
     angular.module('mendel', [
         'ngMaterial',
         'ui.router',
-        'mendel.navigation'
+        'mendel.home',
+        'mendel.layout.navigation'
     ]);
 })();

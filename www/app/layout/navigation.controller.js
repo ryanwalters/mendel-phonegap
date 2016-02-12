@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('mendel.navigation', [])
+        .module('mendel.layout.navigation', [])
         .controller('NavigationController', NavigationController);
 
     function NavigationController() {

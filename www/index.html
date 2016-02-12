@@ -29,11 +29,13 @@
         <link rel="stylesheet" href="dist/angular-material/angular-material.min.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
 
+        <link rel="stylesheet" href="dist/main.css">
+
         <title>Britannica.com</title>
     </head>
     <body ng-cloak layout="column" layout-fill>
 
-        <md-toolbar class="md-medium-tall" layout-align="end" md-whiteframe="1">
+        <md-toolbar class="md-medium-tall md-whiteframe-1dp" layout-align="end">
             <div class="md-toolbar-tools">
                 <button class="md-icon-button md-button">
                     <md-icon md-ink-ripple>menu</md-icon>
@@ -43,11 +45,11 @@
             </div>
         </md-toolbar>
 
-        <md-content ui-view></md-content>
+        <md-content class="md-padding" ui-view></md-content>
 
-        <nav ng-controller="NavigationController as navigation">
+        <!--<nav ng-controller="NavigationController as navigation">
             {{ navigation.test }}
-        </nav>
+        </nav>-->
 
         <script type="text/javascript" src="cordova.js"></script>
 

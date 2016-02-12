@@ -1,0 +1,17 @@
+
+<div ng-repeat="story in home.stories">
+    <md-card>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{ story.title }}</span>
+                <span class="md-subhead">{{ story.date | date: 'MMMM d, yyyy' | uppercase }}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <img src="{{ story.images.FEATURE }}" />
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button>Read more</md-button>
+        </md-card-actions>
+    </md-card>
+</div>
