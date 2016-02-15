@@ -1,6 +1,5 @@
 
-<div ng-repeat="story in home.stories">
-    <md-card>
+    <md-card ng-repeat="story in home.stories">
         <md-card-title>
             <md-card-title-text>
                 <span class="md-headline">{{ story.title }}</span>
@@ -8,10 +7,9 @@
             </md-card-title-text>
         </md-card-title>
         <md-card-content>
-            <img src="{{ story.images.FEATURE }}" />
+            <img ng-src="{{ story.images.FEATURE }}" />
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-            <md-button>Read more</md-button>
+            <a class="md-button" ui-sref="mendel.story({ id: story.id })" md-ink-ripple>Read more</a>
         </md-card-actions>
     </md-card>
-</div>

@@ -8,7 +8,10 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.britannica.phonegap"
+            "PACKAGE_NAME": "com.britannica.phonegap.stories"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.britannica.phonegap.stories"
         }
     },
     "dependent_plugins": {}

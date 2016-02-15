@@ -1,0 +1,4 @@
+<h1 class="md-headline">{{ story.story.expandedTitle }}</h1>
+<div class="md-subhead">Written by {{ story.story.contributor.displayName }}</div>
+<img ng-src="{{ story.story.images.FEATURE }}" />
+<p ng-bind-html="story.story.expandedDescription"></p>
