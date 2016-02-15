@@ -1,0 +1,14 @@
+
+    <md-card ng-repeat="story in home.stories">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{ story.title }}</span>
+                <span class="md-subhead">{{ story.date | date: 'MMMM d, yyyy' | uppercase }}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <img class="md-card-image" ng-src="{{ story.images.FEATURE }}" />
+        <md-card-content ng-bind-html="story.boxDescription"></md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <a class="md-button" ui-sref="mendel.story({ id: story.id })" md-ink-ripple>Read more</a>
+        </md-card-actions>
+    </md-card>

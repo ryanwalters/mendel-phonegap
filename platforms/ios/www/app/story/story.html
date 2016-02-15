@@ -1,0 +1,16 @@
+<div flex-xs layout="column">
+    <md-card>
+        <img class="md-card-image" ng-src="{{ story.story.images.FEATURE }}" alt="feature image" />
+        <md-card-title>
+            <md-card-title-text>
+                <div class="md-headline">{{ story.story.expandedTitle }}</div>
+                <div class="md-subhead">Written by {{ story.story.contributor.displayName }}</div>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content ng-bind-html="story.story.expandedDescription" mendel-links></md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-icon>arrow_back</md-icon>
+            <md-icon>favorite_border</md-icon>
+        </md-card-actions>
+    </md-card>
+</div>
