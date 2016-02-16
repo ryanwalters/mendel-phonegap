@@ -10,6 +10,13 @@
     function MendelConfig($mdThemingProvider, $stateProvider, $urlRouterProvider) {
 
 
+        // --- OS options
+
+        StatusBar.hide();
+
+        //cordova.InAppBrowser.open('http://britannica.com', '_blank', 'location=no');
+
+
         // --- Material theme setup
 
         $mdThemingProvider.theme('default')

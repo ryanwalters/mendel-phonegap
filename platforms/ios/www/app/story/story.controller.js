@@ -9,7 +9,7 @@
 
     function StoryController(_story) {
 
-        angular.element('a').on('click', () => {
+        angular.element(document.querySelector('a')).on('click', () => {
             console.log('click');
         });
 

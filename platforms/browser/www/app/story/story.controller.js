@@ -9,8 +9,11 @@
 
     function StoryController(_story) {
 
-        angular.element(document).find('a').on('click', () => {
+        angular.element(document.querySelector('a')).on('click', (e) => {
+
             console.log('click');
+
+            e.preventDefault();
         });
 
         this.story = _story;
