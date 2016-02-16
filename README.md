@@ -2,7 +2,7 @@
 
 Proof of concept app using [Encylp&aelig;dia Britannica Stories](http://www.britannica.com/stories/browse) data
 
-Built with
+Built with:
 - Phonegap
 - Angular Material
 - Gulp
