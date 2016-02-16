@@ -2,7 +2,7 @@
 <md-card ng-repeat="story in home.stories">
     <md-card-title>
         <md-card-title-text>
-            <span class="md-headline">{{ story.title }}</span>
+            <span class="md-headline" ng-bind-html="story.title"></span>
             <span class="md-subhead">{{ story.date | date: 'MMMM d, yyyy' | uppercase }}</span>
         </md-card-title-text>
     </md-card-title>

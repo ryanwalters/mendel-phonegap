@@ -14,8 +14,6 @@
 
         StatusBar.hide();
 
-        //cordova.InAppBrowser.open('http://britannica.com', '_blank', 'location=no');
-
 
         // --- Material theme setup
 
@@ -31,6 +29,7 @@
 
         $stateProvider.state('mendel', {
             abstract: true,
+            controller: 'MendelController',
             template: '<ui-view />',
             url: '/'
         });
