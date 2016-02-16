@@ -13,14 +13,8 @@
             controller: 'StoryController',
             controllerAs: 'story',
             resolve: {
-                _story: ['$http', '$stateParams', ($http, $stateParams) => $http({
-                    method: 'GET',
-                    url: 'http://dev.britannica.com/api/story',
-                    params: {
-                        featureId: $stateParams.id
-                    }
-                })
-                    .then((response) => response.data)]
+                _story: ['$stateParams', 'ApiService', ($stateParams, ApiService) =>
+                    ApiService.getFeature($stateParams.id).then((response) => response.data)]
             },
             templateUrl: 'app/story/story.html',
             url: '^/story/:id'
