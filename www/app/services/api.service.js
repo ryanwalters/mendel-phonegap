@@ -34,8 +34,8 @@
 
 
         /**
-         * @method getStory
-         * @param {Number} featureId
+         * @method getFeature
+         * @param {Number} featureId - accepts a single id, or an array of ids
          * @returns {Promise}
          */
 
