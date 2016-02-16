@@ -12,9 +12,6 @@
 
         // --- Global state change operations
 
-        $rootScope.$on('$stateChangeSuccess', () => {
-            console.log('complete');
-            $window.scrollTo(0, 0)
-        });
+        $rootScope.$on('$stateChangeSuccess', () => document.querySelector('md-content').scrollTop = 0);
     }
 })();
